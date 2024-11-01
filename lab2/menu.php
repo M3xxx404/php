@@ -10,6 +10,13 @@
 		- Значением элемента с ключём 'link' является один из пунктов меню: 'Домой', 'О нас', 'Контакты', 'Таблица умножения', 'Калькулятор'
 		- Значением элемента с ключём 'href' будет имя файла, на который указывает ссылка: index.php, about.php, contact.php, table.php, calc.php
 	*/
+	$leftMenu = array(
+		['link' => 'Домой', 'href' => 'index.php'],
+		['link'=> 'О нас','href'=> 'about.php'],
+		['link'=> 'Контакты','href'=> 'contact.php'],
+		['link'=> 'Таблица умножения','href'=> 'table.php'],
+		['link'=> 'Калькулятор','href'=> 'calc.php']
+		)
 	?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -43,6 +50,9 @@
 	      <li><a href='calc.php'>Калькулятор</a></li>
 	    </ul>
 	*/
+	foreach ($leftMenu as $menu) {
+		echo "<li><a href={$menu['href']}>{$menu['link']}</a></li>";
+	}
 	?> 
 	</nav>
 </body>

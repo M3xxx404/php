@@ -57,10 +57,9 @@
     for ($r = 2; $r <= $rows; $r++) {
         echo '<tr>';
 		echo "<th>$r</th>";
-        
+       
         for ($c = 2; $c <= $cols; $c++) {
-            $value = $r * $c;
-            echo "<td>$value</td>";
+            echo '<td>', $r * $c, '</td>';
         }
         echo "</tr>";
     }
