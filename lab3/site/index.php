@@ -36,7 +36,7 @@
 		- Сохраните файл index.php
 		- Посмотрите результат в браузере
 		*/ 
-    include 'inc/lib.lnc.php';
+    include 'inc/lib.inc.php';
     include 'inc/data.inc.php';
 ?>
 <!DOCTYPE html>
@@ -49,13 +49,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <include>
+  <header>
     <!-- Верхняя часть страницы -->
     <?php include 'inc/top.inc.php'; ?>
     <!-- Верхняя часть страницы -->
   </header>
 
-  <>
+  <section>
     <!-- Заголовок -->
     <h1>Добро пожаловать на наш сайт!</h1>
     <!-- Заголовок -->
@@ -63,7 +63,7 @@
     <?php include 'inc/index.inc.php'; ?>
     <!-- Область основного контента -->
   </section>
-  <>
+  <nav>
     <!-- Навигация -->
     <?php include 'inc/menu.inc.php'; ?>
     <!-- Навигация -->
