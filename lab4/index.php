@@ -68,7 +68,7 @@ switch ($id) {
                 include 'calc.php';
                 break;
             default:
-                include 'index.inc.php';
+                include 'inc/index.inc.php';
         }
         ?>
         <!-- Область основного контента -->
