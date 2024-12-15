@@ -28,4 +28,8 @@ include('visited.inc.php');
 ?>
 
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 9be38ca634aff5addecb0584de322b4e749b941d

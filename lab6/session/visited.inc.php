@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 declare(strict_types=1);
 // Код для всех страниц - вывод информации о посещенных страницах
@@ -23,3 +24,30 @@ if (isset($_SESSION['visitedPages']) && count($_SESSION['visitedPages']) > 0) {
 	
 } else
     echo "<p>Вы пока не посетили ни одну страницу :(</p>";
+=======
+<?php
+declare(strict_types=1);
+// Код для всех страниц - вывод информации о посещенных страницах
+
+/*
+ЗАДАНИЕ 2
+- В случае сохранения данных 
+	- в массив, проверьте, существует ли он в сессии
+	- в строку, преобразуйте её в массив
+- Выводите в цикле список всех посещённых пользователем страниц
+
+*/
+
+echo "<h2>Список посещённых страниц</h2>";
+
+
+if (isset($_SESSION['visitedPages']) && count($_SESSION['visitedPages']) > 0) {
+    
+	echo "<ul>";
+    foreach ($_SESSION['visitedPages'] as $page)
+        echo "<li>$page</li>";
+    echo "</ul>";
+	
+} else
+    echo "<p>Вы пока не посетили ни одну страницу :(</p>";
+>>>>>>> 9be38ca634aff5addecb0584de322b4e749b941d
